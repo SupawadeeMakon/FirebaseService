@@ -4,85 +4,76 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="20dp"
-        android:background="#c2f489"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="10dp"
-            android:text="@string/Title"
-            android:textColor="#ca1142"
-            android:textSize="30dp"
-            android:textStyle="bold"/>
-
+        <!--Content-->
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_margin="20dp"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center_vertical"
-                android:src="@drawable/ic_user" />
-            <EditText
-                android:layout_margin="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/edtUser"
-                android:inputType="textEmailAddress"
-                android:hint="@string/Email"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_margin="20dp"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center_vertical"
-                android:src="@drawable/ic_passwd"/>
-
-            <EditText
-                android:layout_margin="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/edtPassword"
-                android:inputType="textPassword"
-                android:hint="@string/password"/>
-
-        </LinearLayout>
-
-        <Button
-            android:layout_margin="50dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btnLogin"
-            android:text="@string/login"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/txtRegister"
-            android:text="กรุณาลงทะเบียน"
-            android:textSize="40sp"
-            android:textStyle="italic"
-            android:textColor="#f11313"
-            android:layout_gravity="center_horizontal"/>
-
-    </LinearLayout>
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:background="#dddddd44"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="@string/app_name"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_margin="20dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_user" />
+                <EditText
+                    android:layout_margin="20dp"
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/edtUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/User" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_margin="20dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_passwd" />
+                <EditText
+                    android:layout_margin="20dp"
+                    android:inputType="textPassword"
+                    android:id="@+id/edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnLogin"
+                android:text="@string/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtRegister"
+                android:clickable="true"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="italic"
+                android:textSize="30dp"
+                android:text="@string/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
 
 
 

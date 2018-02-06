@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import piw.rmutsv.ac.th.firebaseservice.R;
 
@@ -15,6 +16,29 @@ import piw.rmutsv.ac.th.firebaseservice.R;
 
 public class MainFragment extends Fragment {
 
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        registerCntroller();
+    }
+
+
+
+    private void registerCntroller() {
+        TextView textView = getView().findViewById(R.id.txtRegister);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getActivity().getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.contentMainFragment,new RegisterFragment())
+                        .addToBackStack(null).commit();
+            }
+        });
+    }//Method
+
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater
@@ -23,4 +47,5 @@ public class MainFragment extends Fragment {
     View view = inflater.inflate(R.layout.fragment_main,container,false);
     return view;
     }
+
 }//end

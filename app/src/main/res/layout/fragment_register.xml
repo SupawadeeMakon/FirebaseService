@@ -1,6 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:background="#e4870d"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:text="@string/Title1"
+            android:textColor="#ca1142"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_margin="20dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_user" />
+            <EditText
+                android:layout_margin="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtUser"
+                android:inputType="text"
+                android:hint="@string/User"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_margin="20dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/mail"/>
+
+            <EditText
+                android:layout_margin="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtUser1"
+                android:inputType="textEmailAddress"
+                android:hint="@string/Email"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_margin="20dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_passwd"/>
+
+            <EditText
+                android:layout_margin="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtPassword"
+                android:inputType="textPassword"
+                android:hint="@string/password"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/imvSave"
+                android:src="@drawable/save"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save Data"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
