@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FirebaseService</string>
+    <string name="Title">ยินดีต้อนรับเข้าสู้ระบบ</string>
+    <string name="Email">กรุณาใส่ e-mail ของคุณ</string>
+    <string name="password">กรุณาใส่ password ของคุณ</string>
+    <string name="login">เข้าสู่ระบบ</string>
+</resources>
